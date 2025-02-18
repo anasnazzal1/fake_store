@@ -20,7 +20,7 @@ const displayCatgry =async ()=>{
             const catgryHtml = catgry.map((ca) => {
                 const encodedCategory = encodeURIComponent(ca);  // Make sure the category is URL-safe
                 return ` 
-                    <a href="//prodact.html?category=${encodedCategory}">${ca}</a>
+                    <a href="prodact.html?category=${encodedCategory}">${ca}</a>
                 `;
             }).join(' ');
             
