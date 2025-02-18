@@ -1,0 +1,334 @@
+:root {
+    --primary-color: #0e1422;
+    --secondary-color: #5c5f6a;
+}
+
+/* header */
+/* sec1 */
+
+.header .sec-1 {
+    background-color: black;
+    color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    min-height: 50px
+}
+/* end sec-1 */
+/* start sec-2 */
+.header .sec-2 {
+  position: relative;
+}
+.header .sec-2 .categoris {
+   
+    box-shadow: 1px 1px 2px rgba(0, 0 ,0,0.3);
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+top:70px;
+    left: 40%;
+    background-color: azure;
+    display: none;
+
+}
+.header .sec-2 .categoris a {
+border-bottom:1px solid gray ;
+}
+.header .sec-2  {
+    padding: 20px;
+}
+.header .sec-2 .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   gap: 15px;
+}
+.header .sec-2 .icons a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.header .sec-2 .links  {
+    display: flex;
+    align-items: center;
+  
+   gap: 20px;
+}
+
+.header .sec-2 .links a {
+    color: gray;
+    cursor: pointer;
+}
+.header .sec-2 .links a:hover {
+    color: black;
+}
+.header .sec-2 .search-bar input {
+ border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0;
+}
+.header .sec-2 .search-bar button {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+
+    
+}
+.header .sec-2 .search-bar button:hover{
+    background-color: black;
+    color: white;
+    
+    
+}
+.header .sec-2 .bar {
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.header .sec-2 .cc:hover .categoris {
+   
+    display:  flex ;
+    flex-direction: column;
+}
+/* إخفاء شريط الروابط افتراضيًا */
+.links-bar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #333;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50px; /* اجعلها أسفل الزر */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* تصميم الروابط */
+.links-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.links-bar a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+/* إظهار شريط الروابط عند تفعيل الـ active */
+.links-bar.active {
+    display: flex;
+}
+
+
+/* media */
+
+@media screen and (max-width: 963px) {
+    .header .sec-2 .links {
+        display: none;
+    }
+    .header .sec-2 .bar {
+        display: block;
+    }
+}
+@media screen and (max-width: 947px) {
+    .header .sec-2 .search-bar{
+        display: none;
+    }
+}
+/* end section2 */
+/* end header */
+
+/* start main */
+/* start section-1 */
+.main .section-1  {
+    padding: 20px;
+}
+.main .section-1 .start {
+   display: flex;
+   flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+            .main .section-1 .start h1 {
+                font-size: 32px;
+                font-weight: 700;
+                color: var(--primary-color);
+                font-family: "Inter", serif;
+            }
+            .main .section-1 .start p {
+                color: #474b57;
+                font-size: 14px;
+                font-weight: 200;
+                
+            }
+            .main .section-1 .start button {
+                background-color: var(--primary-color);
+                color: #fff;
+                border: none;
+                padding: 7px 15px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                cursor: pointer;
+}
+.main .section-1 .start button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+        .main .section-1 .start , .main .section-1 .end {
+            width: calc(90%/2);
+        }
+        .main  .section-1 {
+            background-color: #e9e9eb;
+       
+        }
+        .main  .section-1 .end .img {
+            width: 50%;
+        }
+        .main  .section-1 .end .img img {
+            width: 100%;
+          
+}
+@media  (max-width: 767px) {
+    .main .section-1 .container {
+        width: 95%;
+    }
+}
+@media (max-width: 616px) {
+    .main .section-1 .row {
+        flex-wrap: wrap;
+    }
+    .main .section-1 .start , .main .section-1 .end {
+        width: 70%;
+        margin: auto;
+    }
+
+}
+/* end section-1 */
+/* start section-2 */
+.main .section-2 {
+    padding: 30px;
+}
+.main .section-2 .top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.main .section-2 .top p {
+    color: #878a92;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.main .section-2 .top h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 900;
+}
+.main .section-2 .top .butons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.main .section-2 .top .butons a {
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+@media (max-width:528px) {
+    .main .section-2 .top .butons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+
+
+
+/* end section-2 */
+/* end main */
+/* start footer  */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* end footer */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+z-index: 1;
+    width: 100%;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+   
+  } 
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #FF3D00;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  .d-none {
+    display: none;
+}
